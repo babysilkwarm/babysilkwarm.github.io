@@ -1,0 +1,95 @@
+body {
+  font-size: 16px;
+  color: #000;
+  background-color: #E9EBEE;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  font-family: 'Georgia', serif;
+}
+
+h3 {
+  background-color: grey;
+  color: #fff;
+}
+p {
+  text-indent: 2em;
+  padding: 0px 10px 5px 10px;
+  font-style: italic;
+  text-align: justify;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #4267B2;
+  border-radius: 0;
+  border: 0;
+  padding-bottom: 20px;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Georgia', serif;
+  color: #fff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #fff;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #3B5CA0;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.background-white{
+  background-color: #fff;
+}
+.background-dark-blue{
+  background-color: #004C99;
+}
+.background-dark-red{
+  background-color: #B71111;
+}
+.background-dark-green{
+  background-color: #336600;
+}
+
+
+
+/* For Desktop (md) */
+@media (min-width: 992px){
+}
+
+/* For Tablet (sm) */
+@media (min-width: 768px) and (max-width: 991px){
+}
+
+/* For mobile (xs) */
+@media (max-width: 767px){
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+}
