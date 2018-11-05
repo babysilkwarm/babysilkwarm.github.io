@@ -88,11 +88,11 @@ $ajaxUtils.sendGetRequest(
 });
 // *** finish **
 
-var global_categories = null;
+//var global_categories = null;
 // Builds HTML for the home page based on categories array
 // returned from the server.
 function buildAndShowHomeHTML (categories) {
-  global_categories = categories;
+//  global_categories = categories;
   
   // Load home snippet page
   $ajaxUtils.sendGetRequest(
@@ -102,9 +102,10 @@ function buildAndShowHomeHTML (categories) {
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
-      var randomIndex = Math.floor(Math.random() * global_categories.length)
-      var chosenCategoryShortName = "'" + global_categories[randomIndex].short_name + "'";  
+ //     var randomIndex = Math.floor(Math.random() * global_categories.length)
+ //     var chosenCategoryShortName = "'" + global_categories[randomIndex].short_name + "'";  
 
+      var chosenCategoryShortName = "'" + chooseRandomCategory(categories).short_name + "'";
 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
       // chosen category from STEP 2. Use existing insertProperty function for that purpose.
